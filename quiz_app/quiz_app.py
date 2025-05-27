@@ -26,3 +26,13 @@
 import tkinter as tk
 import random
 from question import Question
+class QuizApp:
+    def __init__(self, window, question_data):
+        self.window = window
+        self.questions_list = [Question(data["question"], data["choices"], data["answer"]) for data in question_data]
+        self.score = 0
+        self.total_questions = len(self.questions_list)
+        self.style_options = {"font": ("Roboto", 12, "bold"), "bg": "#0f172a", "fg": "white"}
+
+        self.setup_ui()
+        self.load_next_question()

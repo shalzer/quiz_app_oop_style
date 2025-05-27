@@ -15,3 +15,6 @@ class DataLoader:
     def load_questions(file_path):
         if not os.path.exists(file_path):
             return []
+
+        with open(file_path, "r") as file:
+            raw_blocks = file.read().strip().split("\n-----------------\n")

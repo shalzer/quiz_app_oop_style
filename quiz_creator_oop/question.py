@@ -15,3 +15,4 @@ class Question:
         self.correct_answer = correct_answer.upper()
 
     def is_valid_answer(self) -> bool:
+        return self.correct_answer in {"A", "B", "C", "D"}

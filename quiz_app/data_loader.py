@@ -18,3 +18,5 @@ class DataLoader:
 
         with open(file_path, "r") as file:
             raw_blocks = file.read().strip().split("\n-----------------\n")
+
+        questions = []

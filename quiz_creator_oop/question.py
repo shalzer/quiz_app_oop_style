@@ -4,3 +4,6 @@
 #Check if the correct answer is a valid choice
 #Return if true
 #Otherwise, return False
+
+class Question:
+    def __init__(self, question_text: str, choice_a: str, choice_b: str, choice_c: str, choice_d: str, correct_answer: str):

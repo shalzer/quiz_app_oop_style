@@ -70,3 +70,19 @@ class QuizApp:
                                      bg="#3b82f6", fg="white", activebackground="#2563eb",
                                      state="disabled", command=self.load_next_question)
         self.next_button.pack(pady=10)
+
+    def load_next_question(self):
+        if not self.questions_list:
+            self.display_final_score()
+            return
+
+        self.current_question = random.choice(self.questions_list)
+        self.questions_list.remove(self.current_question)
+
+        self.question_label.config(text=self.current_question.question_text)
+        for key, value in self.current_question.choices_dict.items():
+            self.answer_buttons[key].config(text=f"{key}) {value}", state="normal")
+
+        self.result_label.config(text="")
+        self.score_label.config(text=f"Score: {self.score} / {self.total_questions}")
+        self.next_button.config(state="disabled")

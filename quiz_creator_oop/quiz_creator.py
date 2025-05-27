@@ -19,3 +19,5 @@ class QuizCreator:
 
     def start(self):
         print("\n📝 Welcome to Quiz Creator!")
+        while True:
+            question = self.create_question()

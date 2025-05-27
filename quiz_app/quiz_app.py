@@ -51,3 +51,13 @@ class QuizApp:
         self.question_label = tk.Label(self.window, font=("Roboto", 14, "bold"),
                                        fg="#e0e0e0", bg="#0f172a", wraplength=550, pady=20)
         self.question_label.pack()
+
+        self.answer_buttons = {}
+        for option in "ABCD":
+            self.answer_buttons[option] = tk.Button(
+                self.window, width=50, bg="#1e293b", fg="white",
+                activebackground="#f43f5e", activeforeground="white",
+                relief="groove", borderwidth=3, font=self.style_options["font"],
+                command=lambda opt=option: self.evaluate_answer(opt)
+            )
+            self.answer_buttons[option].pack(pady=6)

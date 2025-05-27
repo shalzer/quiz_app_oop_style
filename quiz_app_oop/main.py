@@ -16,3 +16,7 @@ def main():
     question_data_list = DataLoader.load_questions("quiz_data.txt")
     if not question_data_list:
         print("No questions found.")
+    else:
+        root_window = tk.Tk()
+        QuizApp(root_window, question_data_list)
+        root_window.mainloop()

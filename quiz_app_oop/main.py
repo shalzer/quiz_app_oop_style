@@ -20,3 +20,5 @@ def main():
         root_window = tk.Tk()
         QuizApp(root_window, question_data_list)
         root_window.mainloop()
+if __name__ == "__main__":
+    main()

@@ -10,3 +10,6 @@ class Question:
 
     def is_correct(self, selected_option):
         return selected_option == self.answer_key
+
+    def get_correct_choice(self):
+        return self.answer_key, self.choices_dict[self.answer_key]

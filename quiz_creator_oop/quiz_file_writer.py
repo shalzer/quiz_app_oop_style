@@ -5,3 +5,6 @@
 #Write each of the multiple choice options (A–D)
 #Write the correct answer
 #Add separator
+
+from question import Question
+class QuizFileWriter: 

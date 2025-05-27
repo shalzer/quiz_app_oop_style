@@ -18,3 +18,5 @@ class QuizFileWriter:
             file.write(f"B) {question.choice_b}\n")
             file.write(f"C) {question.choice_c}\n")
             file.write(f"D) {question.choice_d}\n")
+            file.write(f"Answer: {question.correct_answer}\n")
+            file.write("-----------------\n")

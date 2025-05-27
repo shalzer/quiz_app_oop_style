@@ -8,3 +8,7 @@
 class Question:
     def __init__(self, question_text: str, choice_a: str, choice_b: str, choice_c: str, choice_d: str, correct_answer: str):
         self.question_text = question_text
+        self.choice_a = choice_a
+        self.choice_b = choice_b
+        self.choice_c = choice_c
+        self.choice_d = choice_d

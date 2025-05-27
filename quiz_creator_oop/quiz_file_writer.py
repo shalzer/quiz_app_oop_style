@@ -7,4 +7,5 @@
 #Add separator
 
 from question import Question
-class QuizFileWriter: 
+class QuizFileWriter:
+    def __init__(self, file_name: str = "quiz_data.txt"):

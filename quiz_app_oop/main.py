@@ -11,3 +11,6 @@
 import tkinter as tk
 from data_loader import DataLoader
 from quiz_app import QuizApp
+
+def main():
+    question_data_list = DataLoader.load_questions("quiz_data.txt")

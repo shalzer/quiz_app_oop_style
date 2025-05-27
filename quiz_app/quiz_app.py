@@ -25,3 +25,4 @@
 
 import tkinter as tk
 import random
+from question import Question

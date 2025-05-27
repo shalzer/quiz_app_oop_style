@@ -36,3 +36,8 @@ class QuizApp:
 
         self.setup_ui()
         self.load_next_question()
+
+    def setup_ui(self):
+        self.window.title("🎮 QUIZ APP")
+        self.window.geometry("600x550")
+        self.window.configure(bg="#0f172a")

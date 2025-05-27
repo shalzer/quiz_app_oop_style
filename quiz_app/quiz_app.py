@@ -41,3 +41,13 @@ class QuizApp:
         self.window.title("🎮 QUIZ APP")
         self.window.geometry("600x550")
         self.window.configure(bg="#0f172a")
+
+        tk.Label(self.window, text="⚔️ Test Your Skills!", font=("Roboto", 20, "bold"),
+                 bg="#0f172a", fg="#facc15", pady=10).pack()
+
+        self.score_label = tk.Label(self.window, **self.style_options)
+        self.score_label.pack()
+
+        self.question_label = tk.Label(self.window, font=("Roboto", 14, "bold"),
+                                       fg="#e0e0e0", bg="#0f172a", wraplength=550, pady=20)
+        self.question_label.pack()

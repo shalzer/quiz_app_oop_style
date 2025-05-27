@@ -14,3 +14,7 @@ class QuizFileWriter:
     def save_question(self, question: Question):
         with open(self.file_name, "a") as file:
             file.write(f"Question: {question.question_text}\n")
+            file.write(f"A) {question.choice_a}\n")
+            file.write(f"B) {question.choice_b}\n")
+            file.write(f"C) {question.choice_c}\n")
+            file.write(f"D) {question.choice_d}\n")

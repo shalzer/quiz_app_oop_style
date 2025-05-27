@@ -61,3 +61,12 @@ class QuizApp:
                 command=lambda opt=option: self.evaluate_answer(opt)
             )
             self.answer_buttons[option].pack(pady=6)
+
+        self.result_label = tk.Label(self.window, font=("Roboto", 14, "bold"),
+                                     bg="#0f172a", fg="white")
+        self.result_label.pack(pady=20)
+
+        self.next_button = tk.Button(self.window, text="➡️ Next Question", font=self.style_options["font"],
+                                     bg="#3b82f6", fg="white", activebackground="#2563eb",
+                                     state="disabled", command=self.load_next_question)
+        self.next_button.pack(pady=10)

@@ -31,3 +31,10 @@ class QuizCreator:
             if add_another_question.strip().lower() != "yes":
                 print("✅ Quiz saved!")
                 break
+    def create_question(self) -> Question:
+        question_text = input("Question: ")
+        choice_a = input("A.) ")
+        choice_b = input("B.) ")
+        choice_c = input("C.) ")
+        choice_d = input("D.) ")
+        correct_answer = input("Correct answer (A/B/C/D): ").strip()

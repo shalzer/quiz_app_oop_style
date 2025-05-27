@@ -23,4 +23,5 @@
 # Display a completion message and the final score
 # Disable all buttons so the quiz is fully finished
 
-import tkinter as tk 
+import tkinter as tk
+import random

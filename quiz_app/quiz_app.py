@@ -100,3 +100,10 @@ class QuizApp:
 
         self.score_label.config(text=f"Score: {self.score} / {self.total_questions}")
         self.next_button.config(state="normal")
+
+    def display_final_score(self):
+        self.question_label.config(text="🎉 Quiz Complete!")
+        self.result_label.config(text=f"Final Score: {self.score} / {self.total_questions}")
+        self.next_button.config(state="disabled")
+        for button in self.answer_buttons.values():
+            button.config(state="disabled")

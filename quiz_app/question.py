@@ -6,4 +6,7 @@ class Question:
     def __init__(self, question_text, choices_dict, answer_key):
         self.question_text = question_text
         self.choices_dict = choices_dict
-        self.answer_key = answer_key
+        self.answer_key =
+
+    def is_correct(self, selected_option):
+        return selected_option == self.answer_key

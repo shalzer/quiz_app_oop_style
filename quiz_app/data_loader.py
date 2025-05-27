@@ -29,3 +29,9 @@ class DataLoader:
                 question_text = lines[0].split("Question: ")[1]
                 choice_texts = [line.split(") ")[1] for line in lines[1:5]]
                 answer_key = lines[5].split("Answer: ")[1].strip()
+
+            questions.append({
+                "question": question_text,
+                "choices": dict(zip("ABCD", choice_texts)),
+                "answer": answer_key
+            })

@@ -22,3 +22,5 @@
 # Update the score display and enable the "Next Question" button
 # Display a completion message and the final score
 # Disable all buttons so the quiz is fully finished
+
+import tkinter as tk 

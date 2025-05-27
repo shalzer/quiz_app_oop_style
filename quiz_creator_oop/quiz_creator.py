@@ -21,3 +21,6 @@ class QuizCreator:
         print("\n📝 Welcome to Quiz Creator!")
         while True:
             question = self.create_question()
+            if question and question.is_valid_answer():
+                self.writer.save_question(question)
+                print("✅ Question added!")

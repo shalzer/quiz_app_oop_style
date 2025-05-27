@@ -24,3 +24,8 @@ class DataLoader:
             lines = block.strip().split("\n")
             if len(lines) < 6:
                 continue
+
+            try:
+                question_text = lines[0].split("Question: ")[1]
+                choice_texts = [line.split(") ")[1] for line in lines[1:5]]
+                answer_key = lines[5].split("Answer: ")[1].strip()

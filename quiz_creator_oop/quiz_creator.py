@@ -14,3 +14,5 @@
 from question import Question
 from quiz_file_writer import QuizFileWriter
 class QuizCreator:
+    def __init__(self, file_name: str = "quiz_data.txt"):
+        self.writer = QuizFileWriter(file_name)

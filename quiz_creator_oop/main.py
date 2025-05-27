@@ -3,3 +3,6 @@
 #Start the interactive quiz creation process
 
 from quiz_creator import QuizCreator
+if __name__ == "__main__":
+    quiz_creator_instance = QuizCreator()
+    quiz_creator_instance.start()

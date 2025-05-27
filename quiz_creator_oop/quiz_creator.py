@@ -26,3 +26,8 @@ class QuizCreator:
                 print("✅ Question added!")
             else:
                 print("❌ Invalid answer. Please try again.")
+
+            add_another_question = input("\nDo you want to add another question? (yes/no): ")
+            if add_another_question.strip().lower() != "yes":
+                print("✅ Quiz saved!")
+                break

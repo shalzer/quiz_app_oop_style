@@ -10,3 +10,4 @@
 
 import tkinter as tk
 from data_loader import DataLoader
+from quiz_app import QuizApp

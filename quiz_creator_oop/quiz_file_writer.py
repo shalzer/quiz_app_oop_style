@@ -9,3 +9,7 @@
 from question import Question
 class QuizFileWriter:
     def __init__(self, file_name: str = "quiz_data.txt"):
+        self.file_name = file_name
+
+    def save_question(self, question: Question):
+        with open(self.file_name, "a") as file:

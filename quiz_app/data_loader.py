@@ -8,3 +8,5 @@
 #Append structured question data to the list
 #Skip any improperly formatted blocks
 #Return complete list of question
+
+import os

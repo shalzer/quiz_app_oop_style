@@ -12,3 +12,4 @@ class Question:
         self.choice_b = choice_b
         self.choice_c = choice_c
         self.choice_d = choice_d
+        self.correct_answer = correct_answer.upper()

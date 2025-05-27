@@ -10,3 +10,8 @@
 #Return complete list of question
 
 import os
+class DataLoader:
+    @staticmethod
+    def load_questions(file_path):
+        if not os.path.exists(file_path):
+            return []

@@ -9,3 +9,4 @@
 # Entry point: Run the main function when this script is executed
 
 import tkinter as tk
+from data_loader import DataLoader

@@ -35,3 +35,5 @@ class DataLoader:
                 "choices": dict(zip("ABCD", choice_texts)),
                 "answer": answer_key
             })
+
+        return questions

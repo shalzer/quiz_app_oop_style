@@ -20,3 +20,7 @@ class DataLoader:
             raw_blocks = file.read().strip().split("\n-----------------\n")
 
         questions = []
+        for block in raw_blocks:
+            lines = block.strip().split("\n")
+            if len(lines) < 6:
+                continue

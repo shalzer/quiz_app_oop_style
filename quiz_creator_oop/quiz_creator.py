@@ -38,3 +38,4 @@ class QuizCreator:
         choice_c = input("C.) ")
         choice_d = input("D.) ")
         correct_answer = input("Correct answer (A/B/C/D): ").strip()
+        return Question(question_text, choice_a, choice_b, choice_c, choice_d, correct_answer)

@@ -86,3 +86,17 @@ class QuizApp:
         self.result_label.config(text="")
         self.score_label.config(text=f"Score: {self.score} / {self.total_questions}")
         self.next_button.config(state="disabled")
+
+    def evaluate_answer(self, selected_option):
+        if self.current_question.is_correct(selected_option):
+            self.score += 1
+            self.result_label.config(text="✅ TAMA! Galing ah", fg="#10b981")
+        else:
+            correct_key, correct_value = self.current_question.get_correct_choice()
+            self.result_label.config(text=f"❌ Mali! Ito tama oh: {correct_key}) {correct_value}", fg="#f43f5e")
+
+        for button in self.answer_buttons.values():
+            button.config(state="disabled")
+
+        self.score_label.config(text=f"Score: {self.score} / {self.total_questions}")
+        self.next_button.config(state="normal")

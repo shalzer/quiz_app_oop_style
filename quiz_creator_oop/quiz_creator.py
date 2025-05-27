@@ -24,3 +24,5 @@ class QuizCreator:
             if question and question.is_valid_answer():
                 self.writer.save_question(question)
                 print("✅ Question added!")
+            else:
+                print("❌ Invalid answer. Please try again.")

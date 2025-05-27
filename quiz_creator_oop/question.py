@@ -13,3 +13,5 @@ class Question:
         self.choice_c = choice_c
         self.choice_d = choice_d
         self.correct_answer = correct_answer.upper()
+
+    def is_valid_answer(self) -> bool:
